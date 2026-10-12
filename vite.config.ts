@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/kietlee-portfolio/',
+  base: process.env.GITHUB_ACTIONS ? '/kietlee-portfolio/' : '/',
   server: {
     port: 3000,
     open: false,
