@@ -79,7 +79,7 @@ export const AboutSection: React.FC = () => {
                   <span>{lang === 'vi' ? 'Học Vấn' : 'University'}</span>
                 </div>
                 <div className="text-sm font-bold text-white">FPT University</div>
-                <div className="text-[11px] text-emerald-400">GPA 3.2 / 4.0</div>
+                <div className="text-[11px] text-emerald-400">GPA {PERSONAL_INFO.education.gpa}</div>
               </div>
 
               <div className="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
